@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        var lef;
+        var op;
+        var right;
+        window.onload = function(){
+            lef = document.querySelector(".left");
+            right = document.querySelector(".right");
+            op = document.querySelector("#op");
+            cal = document.querySelector(".cal");
+            cal.addEventListener("submit", submit);
+            setInterval("alert('Please, use me...')", 30000);
+        }
+        function numValid(nb1, nb2) {
+            return nb1 == parseInt(nb1, 10) && nb1 >= 0 && nb2 == parseInt(nb2, 10) && nb2 >= 0;
+        }
+        function submit(){
+            event.preventDefault();
+            var nb1 =Number(lef.value);
+            var nb2 =Number(right.value);
+            var operator = op.value;
+            if (!numValid(lef.value, right.value)) {
+                alert("Error :(");
+                return false;
+            }
+            switch (operator){
+                case ("plus"):
+                    result(nb1 + nb2);
+                    break;
+                case ("sub"):
+                    result(nb1 - nb2);
+                    break;
+                case ("multi"):
+                    result(nb1 * nb2);
+                    break;
+                case ("divide"):
+                    if (nb2 == 0){
+                        result("It’s over 9000!");
+                        break;
+                    }else{
+                        result(nb1 / nb2);
+                        break;}
+                case ("mod"):
+                    if (nb2 == 0){
+                        result("It’s over 9000!");
+                        break;
+                    }else{
+                        result(nb1 % nb2);
+                        break;
+                    }
+            }
+
+        }
+
+        function result(value){
+            console.log(value);
+            alert(value);
+        }
+
+    </script>
+</head>
+<body>
+    <div class="content">
+        <form class="cal" action="">
+            <input type="text" class="left" value=""/>
+            <select name="op" id="op">
+                <option value="plus">+</option>
+                <option value="sub">-</option>
+                <option value="multi">*</option>
+                <option value="divide">/</option>
+                <option value="mod">%</option>
+            </select>
+            <input type="text" class="right" value=""/>
+            <input type="submit"  value="Try me!"/>
+        </form>
+    </div>
+</body>
+</html>

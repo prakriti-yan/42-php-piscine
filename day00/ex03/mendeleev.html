@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mendeleev's periodic table</title>
+	<style>
+		.empty{
+			border:none
+		}
+		.sym{
+			font-size: 2vw;
+			text-align: center;
+			font-weight: bold;	
+		}
+		td{
+			border: 1px solid black;
+		}
+		.left{
+			float: right;
+			text-align: right;
+			font-size: 1vw;
+		}
+		.right{
+			float: left;
+			font-size: 1vw;
+		}
+		table{
+			width: 100%;
+		}
+		.nonmetals{
+			background-color: chartreuse;
+		}
+		.noble {
+				background-color: lightblue;
+		}
+		.metalloids {
+			background-color: rgb(65, 139, 123);
+		}
+		.postrametal {
+				background-color: cyan;
+		}
+		.lanthanoids {
+				background-color: rgb(213, 127, 230);
+		}
+		.actinoids {
+				background-color:pink;
+		}
+		.trametal {
+				background-color: rgb(231, 217, 181);
+		}
+		.alkaliearth {
+				background-color: yellow;
+		}
+		.alkali {
+			background-color: orange;
+		}
+		.other{
+			background-color: whitesmoke;
+		}
+		body{
+			background-image: url("https://steemitimages.com/DQmTvEDEna7ucwz8cZY2RFVwMfB7wWiFwtTvFoWF19TKx6w/videoblocks-doodle-cartoon-animation-of-science-chemistry-physics-astronomy-and-biology-school-education-subject-used-for-presenation-title-in-4k-ultra-hd_sl2xqduzw_thumbnail-full12.png");
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-position: center center; 
+		}
+		.container{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<table>
+		<tbody>
+		<tr>
+			<td class="nonmetals"><p class="sym">H</p><span class="right">1</span><span class="left">1.008</span></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="noble"><p class="sym">He</p><span class="right">2</span><span class="left">4.0026</span></td>
+		</tr>
+		<tr>
+			<td class="alkali"><p class="sym">Li</p><span class="right">3</span><span class="left">6.94</span></td>
+			<td class="alkaliearth"><p class="sym">Be</p><span class="right">4</span><span class="left">9.0122</span></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="metalloids"><p class="sym">B</p><span class="right">5</span><span class="left">10.81</span></td>
+			<td class=" nonmetals"><p class="sym">C</p><span class="right">6</span><span class="left">12.011</span></td>
+			<td class=" nonmetals"><p class="sym">N</p><span class="right">7</span><span class="left">14.007</span></td>
+			<td class=" nonmetals"><p class="sym">O</p><span class="right">8</span><span class="left">15.999</span></td>
+			<td class=" nonmetals"><p class="sym">F</p><span class="right">9</span><span class="left">18.998</span></td>
+			<td class="noble"><p class="sym">Ne</p><span class="right">10</span><span class="left">20.180</span></td>
+		</tr>
+		<tr>
+			<td class="alkali"><p class = "sym">Na</p><span class = "right">11</span><span class = "left">22.990</span></td>
+			<td class="alkaliearth"><p class = "sym">Mg</p><span class = "right">12</span><span class = "left">24.305</span></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class="postrametal"><p class = "sym">Al</p><span class = "right">13</span><span class = "left">26.982</span></td>
+			<td class="metalloids"><p class = "sym">Si</p><span class = "right">14</span><span class = "left">28.085</span></td>
+			<td class=" nonmetals"><p class = "sym">P</p><span class = "right">15</span><span class = "left">30.974</span></td>
+			<td class=" nonmetals"><p class = "sym">S</p><span class = "right">16</span><span class = "left">32.06</span></td>
+			<td class=" nonmetals"><p class = "sym">Cl</p><span class = "right">17</span><span class = "left">35.45</span></td>
+			<td class="noble"><p class = "sym">Ar</p><span class = "right">18</span><span class = "left">39.948</span></td>
+		</tr>
+		<tr>
+			<td class="alkali"><p class = "sym">K</p><span class = "right">19</span><span class = "left">39.098</span></td>
+			<td class="alkaliearth"><p class = "sym">Ca</p><span class = "right">20</span><span class = "left">40.078</span></td>
+			<td class="trametal"><p class = "sym">Sc</p><span class = "right">21</span><span class = "left">44.956</span></td>
+			<td class="trametal"><p class = "sym">Ti</p><span class = "right">22</span><span class = "left">47.867</span></td>
+			<td class="trametal"><p class = "sym">V</p><span class = "right">23</span><span class = "left">50.942</span></td>
+			<td class="trametal"><p class = "sym">Cr</p><span class = "right">24</span><span class = "left">51.996</span></td>
+			<td class="trametal"><p class = "sym">Mn</p><span class = "right">25</span><span class = "left">54.938</span></td>
+			<td class="trametal"><p class = "sym">Fe</p><span class = "right">26</span><span class = "left">55.845</span></td>
+			<td class="trametal"><p class = "sym">Co</p><span class = "right">27</span><span class = "left">58.933</span></td>
+			<td class="trametal"><p class = "sym">Ni</p><span class = "right">28</span><span class = "left">58.693</span></td>
+			<td class="trametal"><p class = "sym">Cu</p><span class = "right">29</span><span class = "left">63.546</span></td>
+			<td class="trametal"><p class = "sym">Zn</p><span class = "right">30</span><span class = "left">65.38</span></td>
+			<td class="postrametal"><p class = "sym">Ga</p><span class = "right">31</span><span class = "left">69.723</span></td>
+			<td class="metalloids"><p class = "sym">Ge</p><span class = "right">32</span><span class = "left">72.630</span></td>
+			<td class="metalloids"><p class = "sym">As</p><span class = "right">33</span><span class = "left">74.922</span></td>
+			<td class=" nonmetals"><p class = "sym">Se</p><span class = "right">34</span><span class = "left">78.971</span></td>
+			<td class=" nonmetals"><p class = "sym">Br</p><span class = "right">35</span><span class = "left">79.904</span></td>
+			<td class="noble"><p class = "sym">Kr</p><span class = "right">36</span><span class = "left">83.798</span></td>
+		</tr>
+		<tr>
+			<td class="alkali"><p class = "sym">Rb</p><span class = "right">37</span><span class = "left">85.468</span></td>
+			<td class="alkaliearth"><p class = "sym">Sr</p><span class = "right">38</span><span class = "left">87.62</span></td>
+			<td class="trametal"><p class = "sym">Y</p><span class = "right">39</span><span class = "left">88.906</span></td>
+			<td class="trametal"><p class = "sym">Zr</p><span class = "right">40</span><span class = "left">91.224</span></td>
+			<td class="trametal"><p class = "sym">Nb</p><span class = "right">41</span><span class = "left">92.906</span></td>
+			<td class="trametal"><p class = "sym">Mo</p><span class = "right">42</span><span class = "left">95.95</span></td>
+			<td class="trametal"><p class = "sym">Tc</p><span class = "right">43</span><span class = "left">98</span></td>
+			<td class="trametal"><p class = "sym">Ru</p><span class = "right">44</span><span class = "left">101.07</span></td>
+			<td class="trametal"><p class = "sym">Rh</p><span class = "right">45</span><span class = "left">102.91</span></td>
+			<td class="trametal"><p class = "sym">Pd</p><span class = "right">46</span><span class = "left">106.42</span></td>
+			<td class="trametal"><p class = "sym">Ag</p><span class = "right">47</span><span class = "left">107.87</span></td>
+			<td class="trametal"><p class = "sym">Cd</p><span class = "right">48</span><span class = "left">112.41</span></td>
+			<td class="postrametal"><p class = "sym">In</p><span class = "right">49</span><span class = "left">114.82</span></td>
+			<td class="postrametal"><p class = "sym">Sn</p><span class = "right">50</span><span class = "left">118.71</span></td>
+			<td class="metalloids"><p class = "sym">Sb</p><span class = "right">51</span><span class = "left">121.76</span></td>
+			<td class="metalloids"><p class = "sym">Te</p><span class = "right">52</span><span class = "left">127.60</span></tdclass="metalloids">
+			<td class=" nonmetals"><p class = "sym">I</p><span class = "right">53</span><span class = "left">126.90</span></td>
+			<td class="noble"><p class = "sym">Xe</p><span class = "right">54</span><span class = "left">131.29</span></td>
+		</tr>
+		<tr>
+			<td class="alkali"><p class = "sym">Cs</p><span class = "right">55</span><span class = "left">132.91</span></td>
+			<td class="alkaliearth"><p class = "sym">Ba</p><span class = "right">56</span><span class = "left">137.33</span></td>
+			<td class="lanthanoids"><p class = "sym">57 - 71</p></td>
+			<td class="trametal"><p class = "sym">Hf</p><span class = "right">72</span><span class = "left">178.49</span></td>
+			<td class="trametal"><p class = "sym">Ta</p><span class = "right">43</span><span class = "left">180.95</span></td>
+			<td class="trametal"><p class = "sym">W</p><span class = "right">74</span><span class = "left">183.84</span></td>
+			<td class="trametal"><p class = "sym">Re</p><span class = "right">75</span><span class = "left">186.21</span></td>
+			<td class="trametal"><p class = "sym">Os</p><span class = "right">76</span><span class = "left">190.23</span></td>
+			<td class="trametal"><p class = "sym">Ir</p><span class = "right">77</span><span class = "left">192.22</span></td>
+			<td class="trametal"><p class = "sym">Pt</p><span class = "right">78</span><span class = "left">195.08</span></td>
+			<td class="trametal"><p class = "sym">Au</p><span class = "right">79</span><span class = "left">196.97</span></td>
+			<td class="trametal"><p class = "sym">Hg</p><span class = "right">80</span><span class = "left">200.59</span></td>
+			<td class="postrametal"><p class = "sym">Tl</p><span class = "right">81</span><span class = "left">204.38</span></td>
+			<td class="postrametal"><p class = "sym">Pb</p><span class = "right">82</span><span class = "left">207.2</span></td>
+			<td class="postrametal"><p class = "sym">Bi</p><span class = "right">83</span><span class = "left">208.98</span></td>
+			<td class="postrametal"><p class = "sym">Po</p><span class = "right">84</span><span class = "left">209</span></td>
+			<td class="metalloids"><p class = "sym">At</p><span class = "right">85</span><span class = "left">210</span></td>
+			<td class="noble"><p class = "sym">Rn</p><span class = "right">86</span><span class = "left">222</span></td>
+		</tr>
+		<tr>
+			<td class="alkali"><p class = "sym">Fr</p><span class = "right">87</span><span class = "left">223</span></td>
+			<td class="alkaliearth"><p class = "sym">Ra</p><span class = "right">88</span><span class = "left">226</span></td>
+			<td class="actinoids"><p class = "sym">89 - 103</p></td>
+			<td class="trametal"><p class = "sym">Rf</p><span class = "right">104</span><span class = "left">267</span></td>
+			<td class="trametal"><p class = "sym">Db</p><span class = "right">105</span><span class = "left">268</span></td>
+			<td class="trametal"><p class = "sym">Sg</p><span class = "right">106</span><span class = "left">269</span></td>
+			<td class="trametal"><p class = "sym">Bh</p><span class = "right">107</span><span class = "left">270</span></td>
+			<td class="trametal"><p class = "sym">Hs</p><span class = "right">108</span><span class = "left">270</span></td>
+			<td class="other"><p class = "sym">Mt</p><span class = "right">109</span><span class = "left">278</span></td>
+			<td class="other"><p class = "sym">Ds</p><span class = "right">110</span><span class = "left">281</span></td>
+			<td class="other"><p class = "sym">Rg</p><span class = "right">111</span><span class = "left">282</span></td>
+			<td class="trametal"><p class = "sym">Cn</p><span class = "right">112</span><span class = "left">285</span></td>
+			<td class="other"><p class = "sym">Nh</p><span class = "right">113</span><span class = "left">286</span></td>
+			<td class="postrametal"><p class = "sym">Fl</p><span class = "right">114</span><span class = "left">289</span></td>
+			<td class="other"><p class = "sym">Mc</p><span class = "right">115</span><span class = "left">290</span></td>
+			<td class="other"><p class = "sym">Lv</p><span class = "right">116</span><span class = "left">293</span></td>
+			<td class="other"><p class = "sym">Ts</p><span class = "right">117</span><span class = "left">294</span></td>
+			<td class="other"><p class = "sym">Og</p><span class = "right">118</span><span class = "left">294</span></td>
+		</tr>
+		<tr>
+			<td class = "empty">&nbsp;</td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+		</tr>
+		<tr>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td  class="lanthanoids"><p class = "sym">La</p><span class = "right">57</span><span class = "left">138.91</span></td>
+			<td  class="lanthanoids"><p class = "sym">Ce</p><span class = "right">58</span><span class = "left">140.12</span></td>
+			<td  class="lanthanoids"><p class = "sym">Pr</p><span class = "right">59</span><span class = "left">140.91</span></td>
+			<td  class="lanthanoids"><p class = "sym">Nd</p><span class = "right">60</span><span class = "left">144.24</span></td>
+			<td  class="lanthanoids"><p class = "sym">Pm</p><span class = "right">61</span><span class = "left">145</span></td>
+			<td  class="lanthanoids"><p class = "sym">Sm</p><span class = "right">62</span><span class = "left">150.36</span></td>
+			<td  class="lanthanoids"><p class = "sym">Eu</p><span class = "right">63</span><span class = "left">151.96</span></td>
+			<td  class="lanthanoids"><p class = "sym">Gd</p><span class = "right">64</span><span class = "left">157.25</span></td>
+			<td  class="lanthanoids"><p class = "sym">Td</p><span class = "right">65</span><span class = "left">158.93</span></td>
+			<td  class="lanthanoids"><p class = "sym">Dy</p><span class = "right">66</span><span class = "left">162.50</span></td>
+			<td  class="lanthanoids"><p class = "sym">Ho</p><span class = "right">67</span><span class = "left">164.93</span></td>
+			<td  class="lanthanoids"><p class = "sym">Er</p><span class = "right">68</span><span class = "left">167.26</span></td>
+			<td  class="lanthanoids"><p class = "sym">Tm</p><span class = "right">69</span><span class = "left">168.93</span></td>
+			<td  class="lanthanoids"><p class = "sym">Yb</p><span class = "right">70</span><span class = "left">173.05</span></td>
+			<td  class="lanthanoids"><p class = "sym">Lu</p><span class = "right">71</span><span class = "left">174.97</span></td>
+		</tr>
+		<tr>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class = "empty"></td>
+			<td class="actinoids"><p class = "sym">Ac</p><span class = "right">89</span><span class = "left">227</span></td>
+			<td class="actinoids"><p class = "sym">Th</p><span class = "right">90</span><span class = "left">232.04</span></td>
+			<td class="actinoids"><p class = "sym">Pa</p><span class = "right">91</span><span class = "left">231.04</span></td>
+			<td class="actinoids"><p class = "sym">U</p><span class = "right">92</span><span class = "left">238.03</span></td>
+			<td class="actinoids"><p class = "sym">Np</p><span class = "right">93</span><span class = "left">237</span></td>
+			<td class="actinoids"><p class = "sym">Pu</p><span class = "right">94</span><span class = "left">244</span></td>
+			<td class="actinoids"><p class = "sym">Am</p><span class = "right">95</span><span class = "left">243</span></td>
+			<td class="actinoids"><p class = "sym">Cm</p><span class = "right">96</span><span class = "left">247</span></td>
+			<td class="actinoids"><p class = "sym">Bk</p><span class = "right">97</span><span class = "left">247</span></td>
+			<td class="actinoids"><p class = "sym">Cf</p><span class = "right">98</span><span class = "left">251</span></td>
+			<td class="actinoids"><p class = "sym">Es</p><span class = "right">99</span><span class = "left">252</span></td>
+			<td class="actinoids"><p class = "sym">Fm</p><span class = "right">100</span><span class = "left">257</span></td>
+			<td class="actinoids"><p class = "sym">Md</p><span class = "right">101</span><span class = "left">258</span></td>
+			<td class="actinoids"><p class = "sym">No</p><span class = "right">102</span><span class = "left">259</span></td>
+			<td class="actinoids"><p class = "sym">Lr</p><span class = "right">103</span><span class = "left">266</span></td>
+
+		</tr>
+		
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

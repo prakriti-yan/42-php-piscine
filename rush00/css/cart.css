@@ -1,0 +1,44 @@
+table#cart-content {
+	width: 66%;
+	float: left;
+	padding-top: 40px;
+	background-color: powderblue;
+	text-align: center;
+}
+
+tr.cart-item {
+	height: 50px;
+}
+
+tr.cart-item > td.name {
+	padding: 0 10px;
+	text-align: left;
+	font-size: 22px;
+	background-color: whitesmoke;
+}
+
+tr.cart-item > .price {
+	background-color: antiquewhite;
+}
+
+tr.cart-item > .count {
+	background-color: whitesmoke;
+}
+
+tr.cart-item > .total {
+	background-color: antiquewhite;
+}
+
+#checkout {
+	display: block;
+	float: right;
+	width: 20%;
+	margin: 5% 5% 10px 5%;
+	padding: 10px 0;
+	border-radius: 6px;
+	border-width: 0;
+	background-color: orange;
+	color: white;
+	text-align: center;
+	font-size: 22px;
+}

@@ -1,0 +1,42 @@
+#category-products {
+	width: 100%;
+	padding: 20px;
+	background-color: bisque;
+}
+
+#category-products tr {
+	background-color: rgb(231, 182, 198);
+}
+
+#category-products td,
+#category-products a {
+	/* display: table-cell; */
+	/* background-color: rgb(240, 255, 254); */
+	position: relative;
+	height: max(10vw, 200px);
+	background-size: cover;
+	text-decoration: none;
+	color: white;
+	text-shadow: 0.125rem 0.125rem 0.5rem black;
+	background-position: center;
+}
+
+#category-products .name {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 10;
+	text-align: right;
+	font-size: min(3vw, 36px);
+	color: rgba(0, 0, 0, 0.66);
+}
+
+#category-products .price {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 10;
+	text-align: right;
+	font-size: max(1vw, 12px);
+	color: green;
+}

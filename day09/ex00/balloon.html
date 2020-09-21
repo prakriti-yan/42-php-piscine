@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+    <style>
+        .balloon{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+    </style>
+    <script>
+       var colors = ['red', 'green', 'blue'];
+       var i = 0;
+       var size = 200;
+       var balloon;
+
+       window.onload = function () {
+        balloon = document.querySelector(".balloon");
+           console.log(balloon);
+           balloon.addEventListener("click", click);
+           balloon.addEventListener("mouseleave", leave);
+       }
+
+       function click(){
+           console.log("hello");
+           size += 10;
+           if (size > 420){
+               size = 200;
+           }
+           i++;
+           if (i > 2)
+                i = 0;
+            balloon.style.height = size + 'px';
+            balloon.style.width = size + 'px';
+            balloon.style.backgroundColor = colors[i];
+       }
+
+       function leave(){
+            console.log("hello");
+           size -= 5;
+           if (size < 200){
+               size = 200;
+           }
+           i--;
+           if (i < 0)
+                i = 2;
+            balloon.style.height = size + 'px';
+            balloon.style.width = size + 'px';
+            balloon.style.backgroundColor = colors[i];
+       }
+    </script>
+</head>
+<body>
+    <div class="balloon"></div>
+</body>
+</html>
